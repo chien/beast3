@@ -1,0 +1,34 @@
+<%= render :partial => "layouts/head" %>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<div id="container">
+<div id="content">
+
+<%= yield %>
+</div>
+
+<div id="right">
+  <%= yield :right %>
+</div>
+
+<br style="clear:both;" />
+
+</div>
+
+<div id="footer">
+  <p class="disclaim">
+    <strong>
+    </strong>
+  </p>
+    <%
+    footers=[I18n.t('txt.footer_message', :default => "Two's company. Three's a forum. More's a Beast.")
+    ]
+    %>
+    <%= footers[rand(footers.size)]%>
+    </strong>
+  </p>
+  <br style="clear:both;" />
+</div>
+</body>
+</html>
