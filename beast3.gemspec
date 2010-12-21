@@ -13,10 +13,13 @@ Gem::Specification.new do |s|
   s.description = %q{An engine that enable forum feature for your website.}
   s.email = %q{chien.cc.kuo@gmail.com}
   s.extra_rdoc_files = [
+    "LICENSE.txt",
     "README"
   ]
   s.files = [
     "lib/ability.rb",
+    "lib/beast3.rb",
+    "lib/beast3/engine.rb",
     "lib/editable.rb",
     "lib/html_formatting.rb"
   ]
