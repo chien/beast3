@@ -1,5 +1,4 @@
-Pharma::Application.routes.draw do
-  devise_for :users
+Rails.application.routes.draw do
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -77,7 +76,5 @@ Pharma::Application.routes.draw do
       get 'search'
     end
   end
-  
-  root :to => 'home#index'
   
 end
